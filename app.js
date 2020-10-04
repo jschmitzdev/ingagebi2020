@@ -78,6 +78,7 @@ app.get('/songdeleted', (req,res) => {
     res.status(404);
     res.end();
   }else{
+    res.status(200);
     res.end();
   }
 });
