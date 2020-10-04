@@ -204,7 +204,8 @@ h2{
 #aufgabenFooterMainWrap{
     width: 100%;
     display: grid;
-    position: absolute;
+    position: fixed;
+    background-color:#f1faee;
     bottom: 0px;
     justify-content: center;
     align-items: center;
@@ -223,4 +224,91 @@ h2{
     align-self: center;
     justify-self: center;
     text-align: center;
+    text-decoration: none;
+}
+
+#quizWrap{
+    margin: 8px 16px;
+}
+
+#quizQuestion{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+#quizForm input{
+    margin: 12px 0 12px 0;
+}
+
+#quizForm .quizLabel{
+    font-size: 1.2rem;
+}
+
+#quizForm p{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 8px;
+    font-family:  Venice-Serif-Medium, sans-serif;
+}
+
+#quizButton, #explanationButtonWrong, #explanationButtonRight, #playAgainBtn{
+    outline: none;
+    background-color: #1d3557;
+    border: 1px solid #1d3557;
+    border-radius: 4px;
+    color:  #f1faee;
+    padding: 8px;
+}
+
+#quizBtnWrap{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.hide-quiz{
+    display: none;
+}
+
+#wrongAnswer p{
+    font-size: 1.25rem;
+    margin: 16px 16px;
+}
+
+#shitEmoji{
+    font-size: 4rem !important;
+    text-align: center;
+}
+
+#richtig{
+    margin-top: 16px;
+}
+
+#gutGemacht{
+    margin-bottom: 16px;
+}
+
+#correctAnswer{
+    font-size: 1.25rem;
+    margin: 16px 16px;
+}
+
+.quizLabel{
+    display: inline;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+#passed, #failed{
+    margin: 16px 16px;
+    text-align: center;
+}
+
+#playAgainBtn{
+    margin-top: 16px;
+}
+
+.hide-countdown{
+    display: none !important;
 }

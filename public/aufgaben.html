@@ -15,13 +15,13 @@
                   stroke-width='2' 
                   stroke-linecap='round'/>
           </svg>
-        <p id="navHeader">Inga Balle Geburtstagsgrusskarte v21.0.0</p>
+        <p id="navHeader">Inga Balle Geburtstagsgrußkarte v21.0.0</p>
     </div>
     <div class="side-menu side-menu-hidden">
         <ul>
-            <li><a id="home-link" href="/">Grusskarte</a></li>
+            <li><a id="home-link" href="/">Grußkarte</a></li>
             <li><a>Deine Aufgaben</a></li>
-            <li><a>Vergangene Grusskarten (kommt)</a></li>
+            <li><a>Vergangene Grußkarten (kommt)</a></li>
         </ul>
         <picture>
             <source srcset="/public/img/Flower_and_leaves.webp" type="image/webp">
@@ -45,6 +45,46 @@
         </div>
         <div id="countdownWrap">
             <a id="countdown">T-: </a>
+        </div>
+        <div id="quizWrap" class="hide-quiz">
+            <h3 id="quizQuestion">Frage</h3>
+            <form id="quizForm">
+                <input type="radio" id="answer0" name="answer" value="Testantwort0">
+                <p class="quizLabel" id="label0"> Testantwort1</p><br>
+                <input type="radio" id="answer1" name="answer" value="Testantwort1">
+                <p class="quizLabel" id="label1"> Testantwort2</p><br>
+                <input type="radio" id="answer2" name="answer" value="Testantwort2">
+                <p class="quizLabel" id="label2"> Testantwort3</p><br>
+                <input type="radio" id="answer3" name="answer" value="Testantwort3">
+                <p class="quizLabel" id="label3"> Testantwort4</p><br>
+                <div id="quizBtnWrap"><button id="quizButton">Weiter</button></div>
+                <p>powered by Wiebke Hinkelmann &copy;2020</p>
+            </form>
+        </div>
+        <div id="quizAnswerExplained" class="hide-quiz">
+            <div id="correctAnswer" class="hide-quiz">
+                <p id="shitEmoji">&#127881;</p>
+                <p id="richtig">RICHTIG!!!11!</p>
+                <p id="gutGemacht">Das hast du gut gemacht Inga!</p>
+                <div id="quizBtnWrap"><button id="explanationButtonRight">Weiter</button></div>
+            </div>
+            <div id="wrongAnswer" class="hide-quiz">
+                <p id="shitEmoji">&#128169;</p>
+                <p>Schade Inga! ¯\_(ツ)_/¯  Die richtige Antwort wäre gewesen:</p>
+                <p id="explanation"></p>
+                <div id="quizBtnWrap"><button id="explanationButtonWrong">Weiter</button></div>
+            </div>
+        </div>
+        <div id="resultScreen" class="hide-quiz">
+            <div id="passed" class="hide-quiz">
+                <p id="passedScore">5/7</p>
+                <p>Wie ne 1 bestanden!</p>
+            </div>
+            <div id="failed" class="hide-quiz">
+                <p id="failedScore">5/7</p>
+                <p>Durchgefallen: Ordentlich reinsch gehießen..</p>
+            </div>        
+            <div id="quizBtnWrap"><button id="playAgainBtn">Nochmal versuchen</button></div>
         </div>
     </div>
     <div id="aufgabenFooterMainWrap">
