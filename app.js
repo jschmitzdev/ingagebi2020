@@ -73,6 +73,7 @@ app.get('/song', (req,res) => {
 });
 
 app.get('/songdeleted', (req,res) => {
+  console.log("songdeleted");
   if(songDeleted){
     res.status(404);
     res.end();
