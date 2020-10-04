@@ -19,6 +19,15 @@ app.get('/aufgaben', (req, res) => {
     res.sendFile(path.join(__dirname + '/public/aufgaben.html'));
 });
 
+app.get('/songdeleted', (req,res) => {
+  console.log("songdeleted");
+  if(songDeleted){
+    res.status(404);
+  }else{
+    res.status(200);
+  }
+});
+
 app.get('/song', (req,res) => {
   setTimeout(function(){
     const file = __dirname + '/public/geburtstag_jan.mp3'
@@ -70,17 +79,6 @@ app.get('/song', (req,res) => {
     res.end();
   }
  
-});
-
-app.get('/songdeleted', (req,res) => {
-  console.log("songdeleted");
-  if(songDeleted){
-    res.status(404);
-    res.end();
-  }else{
-    res.status(200);
-    res.end();
-  }
 });
 
 app.listen(port, () => {
