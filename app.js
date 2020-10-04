@@ -2,7 +2,7 @@
 const express = require("express");
 const path = require("path");
 const app = express()
-const port = 3004
+const port = 8005;
 const fs = require("fs");
 var songDeleted = true;
 if(fs.existsSync(__dirname + '/public/geburtstag_jan.mp3')){
