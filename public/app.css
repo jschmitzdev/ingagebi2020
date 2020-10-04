@@ -1,0 +1,95 @@
+@font-face { font-family: White-Buttell; src: url('/public/White\ Buttell.ttf'); } 
+@font-face { font-family: Venice-Serif-Medium; src: url('/public/VeniceSerif-Medium.ttf'); } 
+
+body{
+    background-color: #f1faee;
+    color: #1d3557;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    min-height: 100vh;
+    display: grid;
+    font-size: 1.5rem;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+img, picture, video{
+    display: block;
+    opacity: 1;
+}
+
+h2{
+    text-align: center;
+    font-family:  White-Buttell, sans-serif;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+#navMainWrap{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    font-family:  Venice-Serif-Medium, sans-serif;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #D8E0D5;
+    position: sticky;
+    top: 0px;
+    background-color:  #f1faee;
+}
+
+#navHeader{
+    margin: 0;
+    padding: 0 16px;
+}
+
+#navHamburger{
+    width: 32px;
+    height: 32px;
+    padding: 8px 8px;
+}
+
+#birthday-song{
+    align-self: center;
+    justify-self: center;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+#skeletor{
+    transition: 500ms;
+    justify-self: center;
+    align-self: center;
+}
+
+.skeletor-invisible{
+    display: none;
+    opacity: 0;
+}
+
+#footerMainWrap{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerMainWrap p {
+    font-family:  White-Buttell, sans-serif;
+}
+
+#countdown{
+    margin: 24px;
+    padding: 16px;
+    border: 2px solid #1d3557;
+    font-size: 20px;
+    display: inline-block;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}

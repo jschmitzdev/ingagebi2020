@@ -1,1 +1,44 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alles Gute!</title>
+    <link rel="stylesheet" href="/public/app.css">
+    <script type="text/javascript" src="/public/app.js"></script>
+</head>
+<body>
+    <div id="navMainWrap">
+        <svg id="navHamburger" viewBox='0 0 10 8' width='40'>
+            <path d='M1 1h8M1 4h 8M1 7h8' 
+                  stroke='#000' 
+                  stroke-width='2' 
+                  stroke-linecap='round'/>
+          </svg>
+        <p id="navHeader">Inga Balle Geburtstagsgrusskarte v21.0.0</p>
+    </div>
+    <div id="main">
+        <h2>Alles gute zu deinem 21. Geburtstag!</h1>
+            <p>Ganz schön alt bist du geworden, du hältst dich aber noch ganz gut! An diesem besonderen Tag freue ich mich ganz besonders darüber, dass es dich gibt, noch mehr als ich das sowieso tue.</p>
+            <br>
+            <p>Dein kommendes Lebensjahr wird vollgepackt mit tollen Erfahrungen und vielen Erfolgen sein. Darauf bin ich schon sehr gespannt und außerdem froh, das miterleben zu dürfen.</p>
+            <br>
+            <p>Ich hoffe du hast einen schönen Tag und freue mich schon auf eine gemütliche Feier heute Abend.</p>
+            <p>Dein Geburtstagsstämmchen habe ich extra im Voraus im Studio aufgenommen:</p>
+            <audio controls id="birthday-song">
+                <source src="/public/song.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+            <img id="skeletor" class="skeletor-invisible" src="/public/skeletor.gif" type="img/gif">
+            <p>Dein Geschenk bekommst du erst, wenn wir uns sehen. Vielleicht kannst du dir aber schon denken, was es ist (Ich hoffe mein Gedächtnis hat mir die richtige 8 Monate alte Erinnerung 'weitergeleitet' &#128521;).</p>
+            <br>
+            <p>Allerdings musst du für dein Geschenk auch etwas leisten. Es ist zwar dein Geburtstag, das heisst aber noch lange nicht, dass du Faul sein darfst. Sorry not sorry &#128539; </p>
+            <p>Wenn die Zeit reif ist, kannst du auf den Knopf da drücken um deine Aufgaben zu erledigen:</p>
+            <a id="countdown">T-: </a>
+    </div>
+    <div id="footerMainWrap">
+        <img>
+        <p>Made with &#10084; in Heimersdorf</p>
+    </div>
+</body>
+</html>
