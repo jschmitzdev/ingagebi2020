@@ -15,26 +15,62 @@
                   stroke-width='2' 
                   stroke-linecap='round'/>
           </svg>
-        <p id="navHeader">Inga Balle Geburtstagsgrusskarte v21.0.0</p>
+        <p id="navHeader">Inga Balle Geburtstagsgrußkarte v21.0.0</p>
+    </div>
+    <div class="side-menu side-menu-hidden">
+        <ul>
+            <li><a id="home-link" href="/">Grußkarte</a></li>
+            <li><a id="aufgaben-link" href="/aufgaben">Deine Aufgaben</a></li>
+            <li><a>Vergangene Grußkarten (kommt)</a></li>
+        </ul>
+        <picture>
+            <source srcset="/public/img/Flower_and_leaves.webp" type="image/webp">
+            <source srcset="/public/img/Flower_and_leaves.png" type="image/png"> 
+            <img id="menuImg1" src="/public/img/Flower_and_leaves.png" alt="Pencil drwing of a flower and its leaves">
+        </picture>
     </div>
     <div id="main">
-        <h2>Alles gute zu deinem 21. Geburtstag!</h1>
-            <p>Ganz schön alt bist du geworden, du hältst dich aber noch ganz gut! An diesem besonderen Tag freue ich mich ganz besonders darüber, dass es dich gibt, noch mehr als ich das sowieso tue.</p>
-            <br>
-            <p>Dein kommendes Lebensjahr wird vollgepackt mit tollen Erfahrungen und vielen Erfolgen sein. Darauf bin ich schon sehr gespannt und außerdem froh, das miterleben zu dürfen.</p>
-            <br>
-            <p>Ich hoffe du hast einen schönen Tag und freue mich schon auf eine gemütliche Feier heute Abend.</p>
-            <p>Dein Geburtstagsstämmchen habe ich extra im Voraus im Studio aufgenommen:</p>
-            <audio controls id="birthday-song">
-                <source src="/public/song.mp3" type="audio/mpeg">
-                Your browser does not support the audio tag.
-            </audio>
-            <img id="skeletor" class="skeletor-invisible" src="/public/skeletor.gif" type="img/gif">
-            <p>Dein Geschenk bekommst du erst, wenn wir uns sehen. Vielleicht kannst du dir aber schon denken, was es ist (Ich hoffe mein Gedächtnis hat mir die richtige 8 Monate alte Erinnerung 'weitergeleitet' &#128521;).</p>
-            <br>
-            <p>Allerdings musst du für dein Geschenk auch etwas leisten. Es ist zwar dein Geburtstag, das heisst aber noch lange nicht, dass du Faul sein darfst. Sorry not sorry &#128539; </p>
-            <p>Wenn die Zeit reif ist, kannst du auf den Knopf da drücken um deine Aufgaben zu erledigen:</p>
+        <div id="headerWrap">
+            <h2>Alles gute zu deinem 21. Geburtstag!</h2>
+            <picture>
+                <source srcset="/public/img/red_green_leaves.webp" type="image/webp">
+                <source srcset="/public/img/red_green_leaves.png" type="image/png"> 
+                <img id="headerImg" src="/public/img/red_green_leaves.png" alt="Image of leaves that have reds and greens">
+            </picture>
+            <picture>
+                <source srcset="/public/img/red_leaves.webp" type="image/webp">
+                <source srcset="/public/img/red_leaves.png" type="image/png"> 
+                <img id="headerImgLeft" src="/public/img/red_leaves.png" alt="Image of leaves with an intense red color">
+            </picture>
+        </div>
+        <p>Ganz schön alt bist du geworden, du hältst dich aber noch ganz gut! An diesem besonderen Tag freue ich mich ganz besonders darüber, dass es dich gibt, noch mehr als ich das sowieso tue.</p>
+        <br>
+        <p>Dein kommendes Lebensjahr wird vollgepackt mit tollen Erfahrungen und vielen Erfolgen sein. Darauf bin ich schon sehr gespannt und außerdem froh, das miterleben zu dürfen.</p>
+        <br>
+        <p>Ich hoffe du hast einen schönen Tag und freue mich schon auf eine gemütliche Feier heute Abend.</p>
+        <p>Dein Geburtstagsstämmchen habe ich extra im Voraus im Studio aufgenommen:</p>
+        <audio controls id="birthday-song">
+            <source src="/public/song.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+        <img id="skeletor" class="skeletor-invisible" src="/public/skeletor.gif" type="img/gif">
+        <p>Dein Geschenk bekommst du erst, wenn wir uns sehen. Vielleicht kannst du dir aber schon denken, was es ist (Ich hoffe mein Gedächtnis hat mir die richtige 8 Monate alte Erinnerung 'weitergeleitet' &#128521;).</p>
+        <br>
+        <p>Allerdings musst du für dein Geschenk auch etwas leisten. Es ist zwar dein Geburtstag, das heisst aber noch lange nicht, dass du Faul sein darfst. Sorry not sorry &#128539; </p>
+        <p>Wenn die Zeit reif ist, kannst du auf den Knopf da drücken um deine Aufgaben zu erledigen:</p>
+        <div id="countdownWrap">
+            <picture>
+                <source srcset="/public/img/sunflower.webp" type="image/webp">
+                <source srcset="/public/img/sunflower.png" type="image/png"> 
+                <img id="countdownImgLeft" src="/public/img/sunflower.png" alt="Pencil drawing of a sunflower">
+            </picture>
             <a id="countdown">T-: </a>
+            <picture>
+                <source srcset="/public/img/rose.webp" type="image/webp">
+                <source srcset="/public/img/rose.png" type="image/png"> 
+                <img id="countdownImgRight" src="/public/img/rose.png" alt="Pencil drawing of a rose">
+            </picture>
+        </div>
     </div>
     <div id="footerMainWrap">
         <img>

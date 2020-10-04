@@ -19,10 +19,131 @@ body{
     padding-right: 8px;
 }
 
-img, picture, video{
+#aufgabenMain{
+    display: grid;
+    font-size: 1.5rem;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+.side-menu{
+    position: fixed;
+    right: 80px;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: calc(100% - 80px);
+    background-color: #1d3557;
+    z-index: 99;
+    padding-top: 48px;
+    transition: 250ms ease-in-out;
+    overflow: hidden;
+}
+
+#menuImg1{
+    width: 90%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    right: 6px;
+}
+
+.side-menu-hidden{
+    right: 100%;
+}
+
+.side-menu ul{
+    margin: 24px 16px;
+}
+
+.side-menu li{
+    padding: 12px 0 12px 0;
+    border-bottom: 1px solid #f1faee;
+}
+
+.side-menu a{
+    color:  #f1faee;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+img, video{
     display: block;
     opacity: 1;
 }
+
+#headerWrap{
+    position: relative;
+    overflow: hidden;
+}
+
+#aufgabenHeaderWrap{
+    position: relative;
+    overflow: hidden;
+    height: auto;
+}
+
+#headerImg{
+    position: absolute;
+    right: 16px;
+    top: 64px;
+    width: 48px;
+    height: auto;
+    transform: rotateZ(25deg);
+}
+
+#headerImgLeft{
+    position: absolute;
+    left: 16px;
+    top: 64px;
+    width: 56px;
+    height: auto;
+    transform: rotateZ(-25deg);
+}
+
+#aufgabenHeaderImg{
+    position: absolute;
+    right: 16px;
+    top: 24px;
+    width: 48px;
+    height: auto;
+    transform: rotateZ(25deg);
+}
+
+#aufgabenHeaderImgLeft{
+    position: absolute;
+    left: 8px;
+    top: 24px;
+    width: 56px;
+    height: auto;
+    transform: rotateZ(-25deg);
+}
+
+#countdownWrap{
+    position: relative;
+    overflow: hidden;
+    display: grid;
+}
+
+#countdownImgLeft{
+    position: absolute;
+    left: 16px;
+    top: 24px;
+    width: 72px;
+    height: auto;
+    transform: rotateZ(-25deg);
+}
+
+#countdownImgRight{
+    position: absolute;
+    right: 16px;
+    top: 24px;
+    width: 72px;
+    height: auto;
+    transform: rotateZ(25deg);
+}
+
 
 h2{
     text-align: center;
@@ -41,6 +162,7 @@ h2{
     position: sticky;
     top: 0px;
     background-color:  #f1faee;
+    z-index: 100;
 }
 
 #navHeader{
@@ -58,7 +180,7 @@ h2{
     align-self: center;
     justify-self: center;
     margin-top: 16px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 #skeletor{
@@ -79,7 +201,16 @@ h2{
     align-items: center;
 }
 
-#footerMainWrap p {
+#aufgabenFooterMainWrap{
+    width: 100%;
+    display: grid;
+    position: absolute;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerMainWrap p, #aufgabenFooterMainWrap p {
     font-family:  White-Buttell, sans-serif;
 }
 

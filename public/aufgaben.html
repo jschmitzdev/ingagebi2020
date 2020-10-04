@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alles Gute!</title>
+    <link rel="stylesheet" href="/public/app.css">
+    <script type="text/javascript" src="/public/app.js"></script>
+</head>
+<body>
+    <div id="navMainWrap">
+        <svg id="navHamburger" viewBox='0 0 10 8' width='40'>
+            <path d='M1 1h8M1 4h 8M1 7h8' 
+                  stroke='#000' 
+                  stroke-width='2' 
+                  stroke-linecap='round'/>
+          </svg>
+        <p id="navHeader">Inga Balle Geburtstagsgrusskarte v21.0.0</p>
+    </div>
+    <div class="side-menu side-menu-hidden">
+        <ul>
+            <li><a id="home-link" href="/">Grusskarte</a></li>
+            <li><a>Deine Aufgaben</a></li>
+            <li><a>Vergangene Grusskarten (kommt)</a></li>
+        </ul>
+        <picture>
+            <source srcset="/public/img/Flower_and_leaves.webp" type="image/webp">
+            <source srcset="/public/img/Flower_and_leaves.png" type="image/png"> 
+            <img id="menuImg1" src="/public/img/Flower_and_leaves.png" alt="Pencil drwing of a flower and its leaves">
+        </picture>
+    </div>
+    <div id="aufgabenMain">
+        <div id="aufgabenHeaderWrap">
+            <h2>Deine Aufgaben</h2>
+            <picture>
+                <source srcset="/public/img/butterfly1.webp" type="image/webp">
+                <source srcset="/public/img/butterfly1.png" type="image/png"> 
+                <img id="aufgabenHeaderImg" src="/public/img/butterfly1.png" alt="Drawing of a butterfly">
+            </picture>
+            <picture>
+                <source srcset="/public/img/butterfly2.webp" type="image/webp">
+                <source srcset="/public/img/butterfly2.png" type="image/png"> 
+                <img id="aufgabenHeaderImgLeft" src="/public/img/butterfly2.png" alt="Drawing of a butterfly">
+            </picture>
+        </div>
+        <div id="countdownWrap">
+            <a id="countdown">T-: </a>
+        </div>
+    </div>
+    <div id="aufgabenFooterMainWrap">
+        <img>
+        <p>Made with &#10084; in Heimersdorf</p>
+    </div>
+</body>
+</html>
