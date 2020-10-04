@@ -75,12 +75,10 @@ img, video{
 
 #headerWrap{
     position: relative;
-    overflow: hidden;
 }
 
 #aufgabenHeaderWrap{
     position: relative;
-    overflow: hidden;
     height: auto;
 }
 
@@ -176,7 +174,7 @@ h2{
     padding: 8px 8px;
 }
 
-#birthday-song{
+#birthday-song, #birthday-song-jan{
     align-self: center;
     justify-self: center;
     margin-top: 16px;

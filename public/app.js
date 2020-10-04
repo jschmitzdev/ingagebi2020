@@ -91,6 +91,23 @@ window.addEventListener('load', function(){
         setCookie("skipCookiePrompt", "true", 1);
     });
 
+
+    //init second birthday song
+    var audioElem = document.getElementById("birthday-song-jan");
+    var bendzko = document.getElementById("bendzko");
+
+    fetch("/songdeleted").then(function(res){
+        if(!res.ok){
+            console.log("could not get song.");
+            audioElem.outerHTML = "";
+            bendzko.outerHTML = "";
+        }else{
+            audioElem.setAttribute("src", "/song");
+        }
+    }).catch(function(res){
+        console.log("fetch failed.");
+    });
+
 });
 
 function getCookie(cname) {
