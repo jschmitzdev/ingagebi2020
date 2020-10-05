@@ -96,17 +96,6 @@ window.addEventListener('load', function(){
     var audioElem = document.getElementById("birthday-song-jan");
     var bendzko = document.getElementById("bendzko");
 
-    fetch("/songdeleted").then(function(res){
-        if(!res.ok){
-            console.log("could not get song.");
-            audioElem.outerHTML = "";
-            bendzko.outerHTML = "";
-        }else{
-            audioElem.setAttribute("src", "/song");
-        }
-    }).catch(function(res){
-        console.log("fetch failed.");
-    });
 
 });
 
