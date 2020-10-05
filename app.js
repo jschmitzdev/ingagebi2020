@@ -23,8 +23,10 @@ app.get('/songdeleted', (req,res) => {
   console.log("songdeleted");
   if(songDeleted){
     res.status(404);
+    res.sendFile(path.join(__dirname + '/public/index.html'));
   }else{
     res.status(200);
+    res.sendFile(path.join(__dirname + '/public/index.html'));
   }
 });
 
